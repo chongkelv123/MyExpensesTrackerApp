@@ -106,8 +106,6 @@ fun BudgetSettingItem(
         ExpenseCategory.FUEL -> categoryFuel
         ExpenseCategory.JL_JE -> categoryJlJe
         ExpenseCategory.OTHERS -> categoryOthers
-        ExpenseCategory.CASH -> categoryCash
-        ExpenseCategory.CREDIT_CARD -> categoryCreditCard
     }
 
     Row(
