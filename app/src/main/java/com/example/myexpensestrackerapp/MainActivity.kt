@@ -1,47 +1,44 @@
-package com.example.myexpensestrackerapp
+package com.example.myexpensetrackerapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.myexpensestrackerapp.ui.theme.MYExpensesTrackerAppTheme
+import androidx.lifecycle.ViewModelProvider
+import com.example.myexpensetrackerapp.navigation.ExpenseTrackerNavigation
+import com.example.myexpensetrackerapp.ui.theme.ExpenseTrackerAppTheme
+import com.example.myexpensetrackerapp.ui.viewmodel.ExpenseViewModel
 
 class MainActivity : ComponentActivity() {
+    // Initialize the ViewModel using the standard Android ViewModel pattern
+    private lateinit var expenseViewModel: ExpenseViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Initialize ViewModel
+        val repository = (application as ExpenseTrackerApplication).repository
+        expenseViewModel = ViewModelProvider(this,
+            ExpenseViewModel.Factory(repository))[ExpenseViewModel::class.java]
+
+        // Enable edge-to-edge design
         enableEdgeToEdge()
+
         setContent {
-            MYExpensesTrackerAppTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+            ExpenseTrackerAppTheme {
+                // A surface container using the 'background' color from the theme
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    // Pass the viewModel to the navigation to share it across screens
+                    ExpenseTrackerNavigation(viewModel = expenseViewModel)
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MYExpensesTrackerAppTheme {
-        Greeting("Android")
     }
 }
