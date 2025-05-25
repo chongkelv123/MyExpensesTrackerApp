@@ -1,4 +1,4 @@
-package com.example.myexpensetrackerapp.ui.screens.expense
+package com.example.myexpensestrackerapp.ui.screens.expense
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -14,8 +14,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import com.example.myexpensetrackerapp.data.model.ExpenseCategory
-import com.example.myexpensetrackerapp.ui.components.getCategoryColor
+import com.example.myexpensestrackerapp.data.model.ExpenseCategory
+import com.example.myexpensestrackerapp.ui.components.getCategoryColor
 import org.threeten.bp.LocalDate
 import org.threeten.bp.format.DateTimeFormatter
 import org.threeten.bp.temporal.ChronoUnit

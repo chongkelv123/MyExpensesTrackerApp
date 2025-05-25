@@ -1,4 +1,4 @@
-package com.example.myexpensetrackerapp.data.db
+package com.example.myexpensestrackerapp.data.db
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

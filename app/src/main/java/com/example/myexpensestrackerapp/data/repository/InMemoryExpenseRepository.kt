@@ -1,9 +1,9 @@
-package com.example.expensetrackerapp.data.repository
+package com.example.myexpensestrackerapp.data.repository
 
-import com.example.expensetrackerapp.data.model.Budget
-import com.example.expensetrackerapp.data.model.Expense
-import com.example.expensetrackerapp.data.model.ExpenseCategory
-import com.example.expensetrackerapp.data.model.MonthYear
+import com.example.myexpensestrackerapp.data.model.Budget
+import com.example.myexpensestrackerapp.data.model.Expense
+import com.example.myexpensestrackerapp.data.model.ExpenseCategory
+import com.example.myexpensestrackerapp.data.model.MonthYear
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

@@ -1,23 +1,26 @@
-package com.example.myexpensetrackerapp
+package com.example.myexpensestrackerapp
 
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.ViewModelProvider
-import com.example.myexpensetrackerapp.navigation.ExpenseTrackerNavigation
-import com.example.myexpensetrackerapp.ui.theme.ExpenseTrackerAppTheme
-import com.example.myexpensetrackerapp.ui.viewmodel.ExpenseViewModel
+import com.example.myexpensestrackerapp.navigation.ExpenseTrackerNavigation
+import com.example.myexpensestrackerapp.ui.theme.ExpenseTrackerAppTheme
+import com.example.myexpensestrackerapp.ui.viewmodel.ExpenseViewModel
 
 class MainActivity : ComponentActivity() {
     // Initialize the ViewModel using the standard Android ViewModel pattern
     private lateinit var expenseViewModel: ExpenseViewModel
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

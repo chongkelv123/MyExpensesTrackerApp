@@ -1,7 +1,7 @@
-package com.example.myexpensetrackerapp
+package com.example.myexpensestrackerapp
 
 import android.app.Application
-import com.example.myexpensetrackerapp.data.db.SQLiteExpenseRepository
+import com.example.myexpensestrackerapp.data.db.SQLiteExpenseRepository
 import com.jakewharton.threetenabp.AndroidThreeTen
 
 class ExpenseTrackerApplication : Application() {

@@ -1,4 +1,4 @@
-package com.example.myexpensetrackerapp.navigation
+package com.example.myexpensestrackerapp.navigation
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -25,15 +25,15 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.myexpensetrackerapp.data.model.ExpenseCategory
-import com.example.myexpensetrackerapp.ui.screens.categories.CategoryScreen
-import com.example.myexpensetrackerapp.ui.screens.expense.ExpenseEntryScreen
-import com.example.myexpensetrackerapp.ui.screens.home.HomeScreen
-import com.example.myexpensetrackerapp.ui.screens.reports.CategoryReportScreen
-import com.example.myexpensetrackerapp.ui.screens.settings.SettingsScreen
-import com.example.myexpensetrackerapp.ui.screens.transaction.TransactionDetailScreen
-import com.example.myexpensetrackerapp.ui.screens.transaction.TransactionEditScreen
-import com.example.myexpensetrackerapp.ui.viewmodel.ExpenseViewModel
+import com.example.myexpensestrackerapp.data.model.ExpenseCategory
+import com.example.myexpensestrackerapp.ui.screens.categories.CategoryScreen
+import com.example.myexpensestrackerapp.ui.screens.expense.ExpenseEntryScreen
+import com.example.myexpensestrackerapp.ui.screens.home.HomeScreen
+import com.example.myexpensestrackerapp.ui.screens.reports.CategoryReportScreen
+import com.example.myexpensestrackerapp.ui.screens.settings.SettingsScreen
+import com.example.myexpensestrackerapp.ui.screens.transaction.TransactionDetailScreen
+import com.example.myexpensestrackerapp.ui.screens.transaction.TransactionEditScreen
+import com.example.myexpensestrackerapp.ui.viewmodel.ExpenseViewModel
 
 // Define the main screens for bottom navigation
 sealed class Screen(val route: String, val title: String) {

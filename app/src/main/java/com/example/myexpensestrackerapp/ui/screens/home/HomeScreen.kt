@@ -1,4 +1,4 @@
-package com.example.myexpensetrackerapp.ui.screens.home
+package com.example.myexpensestrackerapp.ui.screens.home
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -30,15 +30,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.example.myexpensetrackerapp.data.model.Expense
-import com.example.myexpensetrackerapp.data.model.ExpenseCategory
-import com.example.myexpensetrackerapp.ui.components.CategoryCard
-import com.example.myexpensetrackerapp.ui.components.MonthYearSelector
-import com.example.myexpensetrackerapp.ui.components.MonthlySummaryCard
-import com.example.myexpensetrackerapp.ui.components.TransactionItem
-import com.example.myexpensetrackerapp.ui.components.formatCurrency
-import com.example.myexpensetrackerapp.ui.components.getCategoryColor
-import com.example.myexpensetrackerapp.ui.viewmodel.ExpenseViewModel
+import com.example.myexpensestrackerapp.data.model.Expense
+import com.example.myexpensestrackerapp.data.model.ExpenseCategory
+import com.example.myexpensestrackerapp.ui.components.CategoryCard
+import com.example.myexpensestrackerapp.ui.components.MonthYearSelector
+import com.example.myexpensestrackerapp.ui.components.MonthlySummaryCard
+import com.example.myexpensestrackerapp.ui.components.TransactionItem
+import com.example.myexpensestrackerapp.ui.components.formatCurrency
+import com.example.myexpensestrackerapp.ui.components.getCategoryColor
+import com.example.myexpensestrackerapp.ui.viewmodel.ExpenseViewModel
 import org.threeten.bp.format.DateTimeFormatter
 
 @RequiresApi(Build.VERSION_CODES.O)

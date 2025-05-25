@@ -1,5 +1,5 @@
 // 4. Create MonthYear.kt in com.example.expensetrackerapp.data.model package
-package com.example.myexpensetrackerapp.data.model
+package com.example.myexpensestrackerapp.data.model
 
 import org.threeten.bp.LocalDate
 import org.threeten.bp.YearMonth

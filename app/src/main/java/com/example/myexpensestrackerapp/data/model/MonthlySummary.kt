@@ -1,5 +1,5 @@
 // 6. Create MonthlySummary.kt in com.example.expensetrackerapp.data.model package
-package com.example.myexpensetrackerapp.data.model
+package com.example.myexpensestrackerapp.data.model
 
 data class MonthlySummary(
     val month: MonthYear,
