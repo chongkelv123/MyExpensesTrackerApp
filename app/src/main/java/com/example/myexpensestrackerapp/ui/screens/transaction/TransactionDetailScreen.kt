@@ -1,4 +1,4 @@
-package com.example.myexpensetrackerapp.ui.screens.transaction
+package com.example.myexpensestrackerapp.ui.screens.transaction
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -14,10 +14,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.example.myexpensetrackerapp.data.model.Expense
-import com.example.myexpensetrackerapp.ui.components.formatCurrency
-import com.example.myexpensetrackerapp.ui.components.getCategoryColor
-import com.example.myexpensetrackerapp.ui.viewmodel.ExpenseViewModel
+import com.example.myexpensestrackerapp.data.model.Expense
+import com.example.myexpensestrackerapp.ui.components.formatCurrency
+import com.example.myexpensestrackerapp.ui.components.getCategoryColor
+import com.example.myexpensestrackerapp.ui.viewmodel.ExpenseViewModel
 import org.threeten.bp.format.DateTimeFormatter
 
 @OptIn(ExperimentalMaterial3Api::class)

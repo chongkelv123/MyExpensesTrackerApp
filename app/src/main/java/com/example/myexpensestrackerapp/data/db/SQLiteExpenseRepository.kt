@@ -1,13 +1,13 @@
 // FILE: app/src/main/java/com/example/expensetrackerapp/data/db/SQLiteExpenseRepository.kt
-package com.example.myexpensetrackerapp.data.db
+package com.example.myexpensestrackerapp.data.db
 
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
-import com.example.myexpensetrackerapp.data.model.Budget
-import com.example.myexpensetrackerapp.data.model.Expense
-import com.example.myexpensetrackerapp.data.model.ExpenseCategory
-import com.example.myexpensetrackerapp.data.model.MonthYear
+import com.example.myexpensestrackerapp.data.model.Budget
+import com.example.myexpensestrackerapp.data.model.Expense
+import com.example.myexpensestrackerapp.data.model.ExpenseCategory
+import com.example.myexpensestrackerapp.data.model.MonthYear
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update

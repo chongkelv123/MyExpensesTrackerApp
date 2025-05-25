@@ -1,5 +1,5 @@
 // 13. Update SettingsScreen.kt to use ViewModel for budgets
-package com.example.myexpensetrackerapp.ui.screens.settings
+package com.example.myexpensestrackerapp.ui.screens.settings
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -14,9 +14,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import com.example.myexpensetrackerapp.data.model.ExpenseCategory
-import com.example.myexpensetrackerapp.ui.theme.*
-import com.example.myexpensetrackerapp.ui.viewmodel.ExpenseViewModel
+import com.example.myexpensestrackerapp.data.model.ExpenseCategory
+import com.example.myexpensestrackerapp.ui.theme.*
+import com.example.myexpensestrackerapp.ui.viewmodel.ExpenseViewModel
 
 @Composable
 fun SettingsScreen(viewModel: ExpenseViewModel) {
@@ -106,6 +106,8 @@ fun BudgetSettingItem(
         ExpenseCategory.FUEL -> categoryFuel
         ExpenseCategory.JL_JE -> categoryJlJe
         ExpenseCategory.OTHERS -> categoryOthers
+        ExpenseCategory.CASH -> categoryCash
+        ExpenseCategory.CREDIT_CARD -> categoryCreditCard
     }
 
     Row(
