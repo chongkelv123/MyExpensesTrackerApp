@@ -1,5 +1,5 @@
 // 5. Create CategorySummary.kt in com.example.expensetrackerapp.data.model package
-package com.example.myexpensetrackerapp.data.model
+package com.example.myexpensestrackerapp.data.model
 
 data class CategorySummary(
     val category: ExpenseCategory,

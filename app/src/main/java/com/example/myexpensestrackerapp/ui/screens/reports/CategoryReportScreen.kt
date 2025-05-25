@@ -1,4 +1,4 @@
-package com.example.myexpensetrackerapp.ui.screens.reports
+package com.example.myexpensestrackerapp.ui.screens.reports
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
@@ -20,13 +20,13 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.example.myexpensetrackerapp.data.model.Expense
-import com.example.myexpensetrackerapp.data.model.ExpenseCategory
-import com.example.myexpensetrackerapp.ui.components.MonthYearSelector
-import com.example.myexpensetrackerapp.ui.components.TransactionItem
-import com.example.myexpensetrackerapp.ui.components.formatCurrency
-import com.example.myexpensetrackerapp.ui.components.getCategoryColor
-import com.example.myexpensetrackerapp.ui.viewmodel.ExpenseViewModel
+import com.example.myexpensestrackerapp.data.model.Expense
+import com.example.myexpensestrackerapp.data.model.ExpenseCategory
+import com.example.myexpensestrackerapp.ui.components.MonthYearSelector
+import com.example.myexpensestrackerapp.ui.components.TransactionItem
+import com.example.myexpensestrackerapp.ui.components.formatCurrency
+import com.example.myexpensestrackerapp.ui.components.getCategoryColor
+import com.example.myexpensestrackerapp.ui.viewmodel.ExpenseViewModel
 import org.threeten.bp.format.DateTimeFormatter
 
 @Composable

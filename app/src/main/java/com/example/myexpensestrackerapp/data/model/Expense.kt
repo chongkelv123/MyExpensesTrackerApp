@@ -1,4 +1,4 @@
-package com.example.myexpensetrackerapp.data.model
+package com.example.myexpensestrackerapp.data.model
 
 import org.threeten.bp.LocalDate
 

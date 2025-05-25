@@ -1,5 +1,5 @@
 // 1. Create ExpenseCategory.kt in com.example.expensetrackerapp.data.model package
-package com.example.myexpensetrackerapp.data.model
+package com.example.myexpensestrackerapp.data.model
 
 enum class ExpenseCategory(val displayName: String) {
     NTUC("NTUC"),

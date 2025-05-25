@@ -1,5 +1,5 @@
 // 7. Create CategoryComponents.kt in com.example.expensetrackerapp.ui.components package
-package com.example.myexpensetrackerapp.ui.components
+package com.example.myexpensestrackerapp.ui.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
@@ -11,9 +11,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.example.myexpensetrackerapp.data.model.CategorySummary
-import com.example.myexpensetrackerapp.data.model.Expense
-import com.example.myexpensetrackerapp.data.model.ExpenseCategory
+import com.example.myexpensestrackerapp.data.model.CategorySummary
+import com.example.myexpensestrackerapp.data.model.Expense
+import com.example.myexpensestrackerapp.data.model.ExpenseCategory
 import java.text.NumberFormat
 import org.threeten.bp.format.DateTimeFormatter
 import java.util.*
@@ -21,7 +21,7 @@ import androidx.compose.material.icons.filled.ChevronLeft
 import androidx.compose.material.icons.filled.ChevronRight
 import androidx.compose.foundation.background
 import androidx.compose.foundation.shape.CircleShape
-import com.example.myexpensetrackerapp.data.model.MonthYear
+import com.example.myexpensestrackerapp.data.model.MonthYear
 
 // Category colors
 val categoryNtuc = Color(0xFF2196F3) // Blue
@@ -39,6 +39,8 @@ fun getCategoryColor(category: ExpenseCategory): Color {
         ExpenseCategory.FUEL -> categoryFuel
         ExpenseCategory.JL_JE -> categoryJlJe
         ExpenseCategory.OTHERS -> categoryOthers
+        ExpenseCategory.CASH -> categoryCash
+        ExpenseCategory.CREDIT_CARD -> categoryCreditCard
     }
 }
 

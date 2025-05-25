@@ -1,5 +1,5 @@
 // 9. Create CategoryScreen.kt in com.example.expensetrackerapp.ui.screens.categories package
-package com.example.myexpensetrackerapp.ui.screens.categories
+package com.example.myexpensestrackerapp.ui.screens.categories
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
@@ -13,8 +13,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.example.myexpensetrackerapp.data.model.ExpenseCategory
-import com.example.myexpensetrackerapp.ui.components.getCategoryColor
+import com.example.myexpensestrackerapp.data.model.ExpenseCategory
+import com.example.myexpensestrackerapp.ui.components.getCategoryColor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
